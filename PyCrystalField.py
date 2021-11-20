@@ -15,7 +15,8 @@ from pcf_lib.Operators import Ket, Operator, LSOperator
 from pcf_lib.StevensOperators import StevensOp, LS_StevensOp
 from pcf_lib.PointChargeConstants import *
 from pcf_lib.PCF_misc_functions import *
-from numba import njit, jitclass
+from numba import njit
+from numba.experimental import jitclass
 from copy import deepcopy
 
 # abspath = os.path.abspath(__file__)
@@ -954,7 +955,8 @@ class CFLevels:
 
 
 
-from numba import njit, jitclass
+from numba import njit
+from numba.experimental import jitclass
 from numba import float64 #, complex128
 
 import warnings
